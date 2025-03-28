@@ -1,6 +1,6 @@
 class Jugador{
 
-    private char signo;
+    private final char signo;
 
     public Jugador(char signo){
         this.signo = signo;
@@ -19,7 +19,7 @@ class Jugador{
             case 3 -> System.out.println("QUE!??!");
             case 4 -> System.out.println("WHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
             case 5 -> System.out.println("No me gusta donde va esto");
-            case 6 -> System.out.println("Estoy a punto de retirarme ");
+            case 6 -> System.out.println("Estoy a punto de retirarme");
         }
     }
 

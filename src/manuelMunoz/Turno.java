@@ -1,8 +1,6 @@
-
-
 class Turno{
 
-    private int cantidadJugadores;
+    private final int cantidadJugadores;
     private int turnoDeJugador;
 
     public Turno(Jugador jugadores[]) {
@@ -13,6 +11,10 @@ class Turno{
         turnoDeJugador++;
         System.out.println("cambio de turno");
         return turnoDeJugador % cantidadJugadores;
+    }
+
+    public int turnoDeJugador(){
+        return turnoDeJugador;
     }
 
 }
